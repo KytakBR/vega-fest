@@ -1,0 +1,59 @@
+/* Импорт шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
+.headbar {
+  margin-top: 1%;
+}
+.tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headbar-href {
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.about-fest {
+  margin-top: 1%;
+}
+
+.fest-btn {
+  margin-top: 31.5%;
+  margin-left: 2%;
+  width: 22%;
+  border-radius: 40px;
+  z-index: 1;
+  position: absolute;
+  border: none;
+  background-image: linear-gradient(
+    153deg,
+    rgb(235, 31, 31) 0%,
+    rgb(143, 77, 197) 50%,
+    rgb(47, 49, 172) 94%
+  );
+  cursor: pointer;
+}
+
+.about-fest a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 250%;
+  font-weight: 500;
+}
+
+.hero-wrapper {
+  height: 100%;
+  width: 70vw;
+  margin: 0 auto; /* по центру */
+}
+.hero-wrapper img {
+  width: 100%;
+  height: auto; /* сохраняем пропорции */
+  display: block;
+  clip-path: url(#hero-clip);
+}

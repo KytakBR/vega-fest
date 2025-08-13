@@ -3,16 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная страница</title>
+    <title>Vega-Fest</title>
+    <link rel="website icon" type="png" href="static/img/logo.png" />
     <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/svg.css" />
   </head>
   <body>
     <div class="headbar">
-      <a href="#about" class="headbar-href">Обо мне</a>
-      <a href="#" class="headbar-href">Проекты</a>
-      <a href="#" class="headbar-href">Прогресс обучения</a>
-      <a href="#contacts" class="headbar-href">Контакты</a>
+      <div class="tags">
+        <a href="#about-fest" class="headbar-href">О фесте</a>
+        <a href="#events" class="headbar-href">События</a>
+        <a href="#schedule" class="headbar-href">Расписание</a>
+        <a href="#about-vega" class="headbar-href">О Веге</a>
+        <a href="#contacts" class="headbar-href">Контакты</a>
+      </div>
+    </div>
+    <div class="about-fest" id="about-fest">
+      <div class="hero-wrapper">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="hero-clip" clipPathUnits="objectBoundingBox">
+              <path
+                d=" 
+                M 0.08, 0 
+                Q 0,0 0,0.08 
+                L 0, 0.6 
+                Q 0,0.7 0.06,0.7 
+                L 0.3, 0.7 
+                Q 0.4,0.7 0.4,0.87 
+                L 0.4, 0.9 
+                Q 0.4,1 0.45,1 
+                L 0.92, 1 
+                Q 1,1 1,0.92 
+                L 1, 0.08 
+                Q 1,0 0.92,0 
+                Z"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <button class="fest-btn">
+          <a href="#schedule">Участвовать</a>
+        </button>
+        <img src="static/img/comunity.JPEG" alt="Hero image" class="img-fest" />
+      </div>
     </div>
   </body>
   <script src="static/js/script.js"></script>
