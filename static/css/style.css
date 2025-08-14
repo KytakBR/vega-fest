@@ -83,6 +83,7 @@ html {
 }
 
 .picture-buclet {
+  z-index: 1;
   display: flex;
   align-items: flex-end;
   width: 30%;
@@ -92,6 +93,7 @@ html {
 }
 
 .container-txt {
+  margin-right: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -99,6 +101,7 @@ html {
 }
 
 .main-txt-about-fest {
+  z-index: 1;
   font-family: "Unbounded", sans-serif;
   font-size: 300%;
   font-weight: 600;
@@ -106,10 +109,11 @@ html {
 }
 
 .txt-about-fest {
+  z-index: 1;
   font-family: "Roboto", sans-serif;
   font-size: 150%;
   color: aliceblue;
-  width: 100%;
+  width: 120%;
   line-height: 1.5;
 }
 
@@ -121,7 +125,7 @@ html {
 
 .icons-fon {
   border-radius: 50%;
-  width: 100%;
+  width: 8vw;
   background-color: aliceblue;
 }
 
@@ -132,9 +136,25 @@ html {
 }
 
 .icons-txt {
+  text-align: center;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
-  font-size: 130%;
+  font-size: 100%;
+  width: 80%;
   font-weight: 500;
   color: rgb(129, 165, 194);
+}
+
+.bubles {
+  display: flex;
+  align-items: center;
+  right: -25%;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.bubles img {
+  width: 100%;
 }

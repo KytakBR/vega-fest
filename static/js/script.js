@@ -10,7 +10,13 @@ syncButtonHeight();
 
 window.addEventListener("resize", syncButtonHeight);
 
-const icons_fon_list = document.querySelectorAll(".icons-fon");
-icons_fon_list.forEach((el) => {
-  el.style.height = el.clientWidth + "px";
-});
+function updateIconsSize() {
+  const icons_fon_list = document.querySelectorAll(".icons-fon");
+  icons_fon_list.forEach((el) => {
+    el.style.height = el.clientWidth + "px";
+  });
+}
+
+updateIconsSize();
+
+window.addEventListener("resize", updateIconsSize);
