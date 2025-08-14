@@ -20,3 +20,12 @@ function updateIconsSize() {
 updateIconsSize();
 
 window.addEventListener("resize", updateIconsSize);
+
+const images = document.querySelectorAll(".image");
+
+images.forEach((img) => {
+  img.addEventListener("click", () => {
+    images.forEach((i) => i.classList.remove("active"));
+    img.classList.add("active");
+  });
+});

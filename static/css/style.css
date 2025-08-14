@@ -2,12 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
 
 html {
+  width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  -webkit-user-select: none; /* Safari, Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Стандарт */
 }
 
 .headbar {
   margin-top: 1%;
   height: 100vh;
+  width: 100vw;
 }
 
 .tags {
@@ -44,6 +51,11 @@ html {
     rgb(47, 49, 172) 94%
   );
   cursor: pointer;
+  transition: border 0.2s;
+}
+
+.fest-btn:hover {
+  border: solid 3px red;
 }
 
 .fest-btn a {
@@ -129,6 +141,10 @@ html {
   background-color: aliceblue;
 }
 
+.icons-fon img {
+  width: 100%;
+}
+
 .icons-div {
   display: flex;
   flex-direction: column;
@@ -157,4 +173,88 @@ html {
 
 .bubles img {
   width: 100%;
+}
+
+.events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  height: 70vh;
+}
+
+.image {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: flex 0.5s ease;
+}
+
+.caption,
+.caption2,
+.caption3,
+.caption4 {
+  margin-top: 78%;
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  font-weight: 800;
+  text-align: center;
+  width: 90%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.caption {
+  color: rgb(129, 165, 194);
+}
+
+.caption2 {
+  color: rgb(238, 182, 110);
+}
+
+.caption3 {
+  color: rgb(129, 194, 143);
+}
+
+.caption4 {
+  color: rgb(129, 165, 194);
+}
+
+.image.active {
+  flex: 5;
+}
+
+.image.active .caption,
+.image.active .caption2,
+.image.active .caption3,
+.image.active .caption4 {
+  opacity: 1;
+}
+
+.div-events-txt {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.events-txt {
+  font-family: "Unbounded", sans-serif;
+  font-size: 250%;
+  font-weight: 500;
+  margin-top: 10px;
 }
