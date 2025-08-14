@@ -1,9 +1,11 @@
 /* Импорт шрифтов */
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 .headbar {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   margin-top: 1%;
   height: 100vh;
 }
@@ -70,16 +72,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: rgb(163, 190, 214);
+  background: #4da1a1;
+  background: linear-gradient(
+    179deg,
+    rgba(77, 161, 161, 1) 0%,
+    rgba(209, 243, 255, 1) 100%
+  );
   height: 100vh;
+  transition: 0.5s;
 }
 
-.pic-mobile {
+.picture-buclet {
   display: flex;
-  justify-content: end;
-  width: 20%;
+  align-items: flex-end;
+  width: 30%;
 }
-
 .pic-mobile img {
   width: 100%;
 }
@@ -87,10 +94,47 @@
 .container-txt {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  justify-content: space-evenly;
   width: 30%;
 }
 
+.main-txt-about-fest {
+  font-family: "Unbounded", sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+  color: aliceblue;
+}
+
 .txt-about-fest {
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  color: aliceblue;
   width: 100%;
+  line-height: 1.5;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons-fon {
+  border-radius: 50%;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.icons-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-txt {
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  font-weight: 500;
+  color: rgb(129, 165, 194);
 }
