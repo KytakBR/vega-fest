@@ -177,6 +177,7 @@ html {
 
 .events {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -208,7 +209,7 @@ html {
 .caption4 {
   margin-top: 78%;
   font-family: "Roboto", sans-serif;
-  font-size: 200%;
+  font-size: 180%;
   font-weight: 800;
   text-align: center;
   width: 90%;
@@ -243,18 +244,12 @@ html {
   opacity: 1;
 }
 
-.div-events-txt {
-  z-index: -1;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
 .events-txt {
   font-family: "Unbounded", sans-serif;
   font-size: 250%;
-  font-weight: 500;
-  margin-top: 10px;
+  font-weight: 600;
+}
+
+.div-events-txt {
+  margin-bottom: 4%;
 }
