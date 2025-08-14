@@ -277,7 +277,7 @@ html {
   z-index: 1;
   font-family: "Roboto", sans-serif;
   font-size: 140%;
-  font-weight: 500;
+  font-weight: 400;
   color: aliceblue;
 }
 
@@ -317,4 +317,8 @@ html {
 
 .schedule-img {
   width: 100%;
+}
+
+.date {
+  font-weight: 700;
 }
