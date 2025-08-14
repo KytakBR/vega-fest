@@ -1,9 +1,9 @@
 /* Импорт шрифтов */
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
 .headbar {
-  height: 100vh;
   margin-top: 2%;
 }
+
 .tags {
   width: 100%;
   display: flex;
@@ -60,6 +60,7 @@
 }
 
 .about-fest {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
