@@ -21,6 +21,17 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
 
 .tags {
   width: 100%;
@@ -28,7 +39,7 @@ body {
   justify-content: space-evenly;
 }
 
-.headbar-href {
+.tags a {
   font-family: "Roboto", sans-serif;
   font-size: 110%;
   font-weight: 700;
@@ -82,6 +93,7 @@ body {
 }
 
 .about-fest {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

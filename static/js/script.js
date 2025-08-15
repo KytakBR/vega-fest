@@ -84,8 +84,8 @@ window.addEventListener("load", () => {
 });
 
 const burger = document.getElementById("burger");
-const nav = document.getElementById("nav");
+const tags = document.getElementById("tags");
 
 burger.addEventListener("click", () => {
-  nav.classList.toggle("active");
+  tags.classList.toggle("active");
 });
