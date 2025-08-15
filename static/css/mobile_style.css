@@ -1,12 +1,4 @@
 @media (max-width: 480px) {
-  html {
-    width: 100vw;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
   .headbar {
     background-image: url("../img/comunity_mobile.JPEG");
     background-size: cover;
