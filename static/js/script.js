@@ -42,38 +42,43 @@ place_btn.addEventListener("click", () => {
   pic_schedule.style.backgroundImage = "url('static/img/place.PNG')";
 });
 
-var swiper = new Swiper(".swiper", {
-  initialSlide: 3,
-  centeredSlides: true,
-  loop: true,
-  speed: 900,
-  grabCursor: true,
-  allowTouchMove: false,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: -10,
-    stretch: -45,
-    depth: 90,
-    modifier: 1,
-    slideShadows: true,
-  },
-  mousewheel: {
-    thresholdDelta: 50,
-    sensitivity: 1,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+window.addEventListener("load", () => {
+  new Swiper(".swiper", {
+    initialSlide: 3,
+    centeredSlides: true,
+    loop: true,
+    observer: true,
+    observerParents: true,
+    speed: 900,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: -10,
+      stretch: -45,
+      depth: 90,
+      modifier: 1,
+      slideShadows: true,
     },
-    600: {
-      slidesPerView: 3,
+    mousewheel: {
+      thresholdDelta: 50,
+      sensitivity: 1,
     },
-    1200: {
-      slidesPerView: 5,
+    pagination: {
+      el: ".swiper-pagination",
     },
-  },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      600: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+    },
+  });
+  swiper.update();
 });
