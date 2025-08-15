@@ -1,0 +1,28 @@
+@media (max-width: 480px) {
+  .headbar {
+    background-image: url("../img/comunity_mobile.JPEG");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 10vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: black;
+  }
+  .start {
+    display: none;
+  }
+}
+
+/* По умолчанию бургер скрыт на больших экранах */
+.burger {
+  display: none;
+}
