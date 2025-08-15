@@ -29,3 +29,51 @@ images.forEach((img) => {
     img.classList.add("active");
   });
 });
+
+const pic_schedule = document.querySelector(".pic-schedule");
+const date_btn = document.querySelector(".date-btn");
+const place_btn = document.querySelector(".place-btn");
+
+date_btn.addEventListener("click", () => {
+  pic_schedule.style.backgroundImage = "url('static/img/schedule.PNG')";
+});
+
+place_btn.addEventListener("click", () => {
+  pic_schedule.style.backgroundImage = "url('static/img/place.PNG')";
+});
+
+var swiper = new Swiper(".swiper", {
+  initialSlide: 3,
+  centeredSlides: true,
+  loop: true,
+  speed: 900,
+  grabCursor: true,
+  allowTouchMove: false,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: -10,
+    stretch: -45,
+    depth: 90,
+    modifier: 1,
+    slideShadows: true,
+  },
+  mousewheel: {
+    thresholdDelta: 50,
+    sensitivity: 1,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    600: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});

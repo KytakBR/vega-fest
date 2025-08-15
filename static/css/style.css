@@ -1,14 +1,13 @@
 /* Импорт шрифтов */
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
 html {
   width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  -webkit-user-select: none; /* Safari, Chrome */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE/Edge */
-  user-select: none; /* Стандарт */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .headbar {
@@ -163,6 +162,7 @@ html {
   right: -25%;
   width: 50%;
   height: 100vh;
+  @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
   position: absolute;
   z-index: 0;
 }
@@ -265,9 +265,14 @@ html {
 }
 
 .pic-schedule {
+  background-image: url("../img/schedule.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
   border-radius: 15px;
-  height: 30vw;
-  width: 30vw;
+  height: 32vw;
+  width: 35vw;
 }
 
 .schedule-txt,
@@ -321,4 +326,178 @@ html {
 
 .date {
   font-weight: 700;
+}
+
+.date a {
+  color: aliceblue;
+}
+
+.schedule-btns {
+  border-radius: 12px;
+  background-color: rgb(240, 248, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  margin-top: 3%;
+  width: 25%;
+  height: 7vh;
+}
+
+.date-btn,
+.place-btn {
+  font-family: "Unbounded", sans-serif;
+  font-size: 130%;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 48%;
+  height: 6vh;
+  cursor: pointer;
+  color: rgb(52, 11, 88);
+}
+
+.about-vega {
+  display: flex;
+  height: 100vh;
+}
+
+.txt-title-vega {
+  font-family: "Unbounded", sans-serif;
+  font-size: 250%;
+  font-weight: 600;
+  color: rgb(52, 11, 88);
+}
+
+.txt-about-vega {
+  padding: 30px 15px;
+  color: rgb(52, 11, 88);
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  font-weight: 300;
+  width: 100%;
+  line-height: 1.3;
+}
+
+.photo {
+  position: absolute;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.title-about-vega {
+  margin-top: 2%;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.title-about-vega div {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(199, 217, 233, 0.5);
+  box-shadow: 0 0 100px rgba(108, 111, 255, 0.3);
+  width: 45%;
+  border-radius: 15px;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+.swiper {
+  height: 45vh;
+  margin: 50px auto;
+  padding-bottom: 60px;
+  user-select: none;
+}
+
+.swiper-slide {
+  position: relative;
+  height: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  filter: grayscale(20%) brightness(80%);
+  pointer-events: none;
+  will-change: transform;
+}
+
+.swiper-slide .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+
+.swiper-slide .front::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle closest-side,
+    #658bd9 3px,
+    transparent 3px
+  );
+  background-size: 8px 8px;
+  transition: opacity 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0.3;
+}
+
+.swiper-slide-active .front::before {
+  opacity: 0;
+}
+
+.swiper-slide-active {
+  filter: grayscale(0) brightness(100%);
+  pointer-events: auto;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide-active .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background-color: #7e7e7e;
+  border-radius: 50%;
+  transition: all 0.6s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  width: 36px;
+  background-color: #717271;
+  border-radius: 14px;
+}
+
+.swiper-main {
+  height: 100vh;
+  display: flex;
+  align-items: end;
 }

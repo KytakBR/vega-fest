@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/svg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="headbar">
@@ -152,18 +156,123 @@
           Время проведения: <span class="date">17:00-20:00</span>
         </p>
         <p class="schedule-place">
-          Место проведения: <span class="date">Контора Пароходства</span>
+          Место проведения:
+          <span class="date"
+            ><a href="https://yandex.ru/maps/-/CHtRN47i"
+              >Контора Пароходства</a
+            ></span
+          >
         </p>
       </div>
-      <div class="pic-schedule">
-        <picture
-          ><img class="schedule-img" src="static/img/schedule.PNG" alt=""
-        /></picture>
+      <div class="pic-schedule" id="pic-schedule">
+        <div class="schedule-btns">
+          <button class="date-btn" id="date-btn">Дата</button>
+          <button class="place-btn" id="place-btn">Место</button>
+        </div>
       </div>
       <div class="bubles-schedule">
-        <div><img src="static/img/bubles.png" alt="" /></div>
+        <div>
+          <img src="static/img/bubles.png" alt="" />
+        </div>
       </div>
     </div>
+    <div class="about-vega" id="about-vega">
+      <div class="title-about-vega">
+        <p class="txt-title-vega">Организаторы</p>
+        <div>
+          <p class="txt-about-vega">
+            ТГМОО КОС «ВЕГА» – это объединение старшеклассников Тюмени, которое
+            сплачает в одном коллективе подростков с разными интересами и
+            способностями. Главной целью ВЕГи является развитие лидерских,
+            морально-нравственных, творческих качеств молодёжи. ВЕГА является
+            удобной платформой для самореализации, развития коммуникативных и
+            лидерских качеств, воплощения разнообразных креативных идей. <br />С
+            нами ребята раскрывают свои сильные стороны, находят друзей и
+            получают море положительных эмоций!
+          </p>
+        </div>
+      </div>
+      <section>
+        <div class="swiper-main">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper1.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper2.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper3.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper4.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper5.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper6.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper7.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper8.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper9.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card">
+                  <div class="front">
+                    <img src="static/img/swiper/swiper10.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="static/js/script.js"></script>
   </body>
-  <script src="static/js/script.js"></script>
 </html>
